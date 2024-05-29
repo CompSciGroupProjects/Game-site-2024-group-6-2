@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"> </script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="1player" onclick="computerEnabler()">1 PLAYER</button>
+<button id="2player" onclick="computerDisabler()">2 PLAYERS</button>
+<button id="neverLose" onclick="computerNL()">ALWAYS LOSE</button>
+<p id="turn" >PLAYER1'S TURN</p>
+<div id="board">
+    <button id="00" class="ticTac" onclick="attach(0,0)" >_</button>
+    <button id="01" class="ticTac" onclick="attach(0,1)">_</button>
+    <button id="02" class="ticTac" onclick="attach(0,2)">_</button>
+    <button id="10" class="ticTac" onclick="attach(1,0)">_</button>
+    <button id="11" class="ticTac" onclick="attach(1,1)">_</button>
+    <button id="12" class="ticTac" onclick="attach(1,2)">_</button>
+    <button id="20" class="ticTac" onclick="attach(2,0)">_</button>
+    <button id="21" class="ticTac" onclick="attach(2,1)">_</button>
+    <button id="22" class="ticTac" onclick="attach(2,2)">_</button>
+</div>
+
+<p id="displayWinner"></p>
+
+</body>
+</html>
