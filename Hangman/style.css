@@ -1,0 +1,62 @@
+#title-thing {
+    font-size: 2.5vw;
+}
+
+.wrapper {
+    text-align : center;
+    width : 100%;
+    margin : 0 auto;
+}
+
+.img {
+    height : 500px;
+}
+
+#body {
+    display : flex;
+    justify-content: space-between;
+}
+
+#random-word {
+    font-size : 2.5vw;
+}
+
+.top-body {
+    font-size : 2.5vw;
+    padding : 10vw 10vw 15vw 10vw;
+    width : fit-content;
+}
+
+#correct-word {
+    margin: 0;
+    display: block;
+    padding: 0;
+}
+
+#correct-word li {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+#alphabet {
+    display : flex;
+    gap : 0.3vw;
+    padding : 1vw 1vw;
+    width : fit-content;
+    margin : auto;
+    list-style-type : none;
+}
+
+#alphabet li {
+    cursor : pointer;
+    padding : 1vw;
+    font-size : 2.5vw;
+}
+
+.got-wrong {
+    -webkit-text-fill-color: red;
+}
+
