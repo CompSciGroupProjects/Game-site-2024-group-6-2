@@ -1,12 +1,12 @@
 body{
     font-family: Boogaloo;
-    background: #8DD7BF                      ;
+    background: #FFBF64;
 }
 ul {
     list-style-type: none;
     padding: 0;
     overflow: hidden;
-    background-color: #FFBF64;
+    background-color: #6dd3ff;
     font-size: 140%;
     position: fixed;
     top:0;
@@ -31,7 +31,7 @@ li a {
     text-decoration: none;
 }
 .active{
-    background: #FF5768;
+    background: #00A5E3;
 }
 
 
