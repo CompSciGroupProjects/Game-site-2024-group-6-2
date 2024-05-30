@@ -7,10 +7,16 @@
     <title>Title</title>
 </head>
 <body>
-<button id="1player" onclick="computerEnabler()">1 PLAYER</button>
-<button id="2player" onclick="computerDisabler()">2 PLAYERS</button>
-<button id="neverLose" onclick="computerNL()">ALWAYS LOSE</button>
-<p id="turn" >PLAYER1'S TURN</p>
+<div id="nabil">
+    <button id="1player" class="activator" onclick="computerEnabler()">1 PLAYER (Easy Mode)</button>
+    <button id="1playerHard" class="activator">1 PLAYER(Hard Mode)</button>
+    <button id="neverLose" class="activator" onclick="computerNL()">1 PLAYER(ALWAYS LOSE)</button>
+    <button id="2player" class="activator" onclick="computerDisabler()">2 PLAYERS</button>
+</div>
+<div id="nas">
+    <p id="turn" >PLAYER1'S TURN</p>
+</div>
+
 <div id="board">
     <button id="00" class="ticTac" onclick="attach(0,0)" >_</button>
     <button id="01" class="ticTac" onclick="attach(0,1)">_</button>
@@ -23,7 +29,8 @@
     <button id="22" class="ticTac" onclick="attach(2,2)">_</button>
 </div>
 
-<p id="displayWinner"></p>
-
+<div id="joshua">
+    <p id="displayWinner" ></p>
+</div>
 </body>
 </html>
