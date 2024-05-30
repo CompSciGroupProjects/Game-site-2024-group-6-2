@@ -23,6 +23,17 @@ function spottaken(colNum) {
             if (row >= 0) {
                 myArray[row][colNum] = player;
                 document.getElementById("SpaceRow" + row + "Col" + colNum).innerHTML = player;
+                if(document.getElementById("SpaceRow" + row + "Col" + colNum).innerHTML == 1) {
+                    document.getElementById("SpaceRow" + row + "Col" + colNum).style.color = "blue";
+                }
+                else if(document.getElementById("SpaceRow" + row + "Col" + colNum).innerHTML==2)
+                {
+                    document.getElementById("SpaceRow" + row + "Col" + colNum).style.color = "red";
+                }
+                else
+                {
+
+                }
                 setTimeout(didWin, 10);
                 player = player % 2 + 1;
                 maxPlays--;
