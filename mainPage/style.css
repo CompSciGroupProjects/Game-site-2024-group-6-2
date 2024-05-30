@@ -1,0 +1,43 @@
+body{
+    font-family: Boogaloo;
+    background: #8DD7BF                      ;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFBF64;
+    font-size: 140%;
+    position: fixed;
+    top:0;
+    left:0;
+    margin: 0;
+    width: 100%;
+
+
+}
+
+li {
+    float: left;
+   border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.active{
+    background: #FF5768;
+}
+
+
+@font-face {
+    font-family : 'Boogaloo';
+    src : url("fonts/Boogaloo-Regular.ttf");
+    font-weight : normal;
+    font-style : normal;
+}
