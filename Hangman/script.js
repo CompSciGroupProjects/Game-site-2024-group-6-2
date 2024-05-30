@@ -24,6 +24,9 @@ window.onload = function() {
             letter.onclick = input;
             inputs.appendChild(letters);
             letters.appendChild(letter);
+            if((counter/9) % 0) {
+                inputs.innerHTML += '<br>';
+            }
         }
         document.addEventListener("keydown", (event ) => keyboardInput(event.key));
     }
@@ -108,6 +111,7 @@ window.onload = function() {
         if (lives < 1) {
             play = false;
             winLoss.innerHTML = 'LOSER';
+            winLoss.setAttribute('class', 'top-body got-wrong')
             document.getElementById("random-word").innerHTML = word;
             document.getElementById("random-word").setAttribute('class', 'got-wrong wrapper');
             showBody();
@@ -115,6 +119,7 @@ window.onload = function() {
         if (amountOfGuesses === word.length) {
             winLoss.innerHTML = 'WINNER';
             play = false;
+            document.getElementById("random-word").setAttribute('class', 'got-right wrapper');
             showBody();
 
         }
