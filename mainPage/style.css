@@ -2,7 +2,7 @@ body{
     font-family: Boogaloo;
     background: #FFBF64;
 }
-ul {
+#nav {
     list-style-type: none;
     padding: 0;
     overflow: hidden;
@@ -17,19 +17,20 @@ ul {
 
 }
 
-li {
+#nav li {
     float: left;
    border-width: 1px;
     border-color: black;
     border-style: solid;
 }
-li a {
+#nav li a {
     display: block;
     color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
+
 .active{
     background: #00A5E3;
 }
