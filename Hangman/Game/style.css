@@ -1,0 +1,126 @@
+@font-face {
+    font-family : 'Boogaloo';
+    src : url("fonts/Boogaloo-Regular.ttf");
+    font-weight : normal;
+    font-style : normal;
+}
+
+#not-body {
+    padding-top : 50px;
+    font-family: Boogaloo, serif;
+    background-color : #FFBF64;
+}
+
+#lives {
+
+}
+
+.my-button {
+    font-family : Boogaloo, serif;
+    background-color: #00A5E3;
+    font-size : 2.5vw;
+    border : solid black 0.3vw;
+}
+
+#title-thing {
+    font-size: 2.5vw;
+}
+
+.wrapper {
+    text-align : center;
+    width : 100%;
+    margin : 0 auto;
+}
+
+#body {
+    display : flex;
+    justify-content: space-between;
+    padding-bottom : 5vw;
+}
+
+#random-word {
+    font-size : 2.5vw;
+}
+
+.top-body {
+    font-size : 2.5vw;
+    text-align : center;
+    padding : 10vw 10vw 10vw 10vw;
+    width : fit-content;
+    height : 10px;
+}
+
+#correct-word {
+    margin: 0;
+    display: block;
+    padding: 0;
+}
+
+#correct-word li {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+#alphabet {
+    display : flex;
+    gap : 0.3vw;
+    padding : 1vw 1vw;
+    width : fit-content;
+    margin : auto;
+    list-style-type : none;
+}
+
+#alphabet li {
+    cursor : pointer;
+    padding : 0.85vw;
+    height : 2.5vw;
+    font-size : 2.5vw;
+    border-radius : 5px;
+    border : black outset 5px;
+
+}
+
+.active{
+    background: #00A5E3;
+}
+
+.got-wrong {
+    -webkit-text-fill-color: #FF5768;
+}
+
+.got-right {
+    -webkit-text-fill-color: #8dd7BF;
+}
+
+#nav {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #6dd3ff;
+    font-size: 140%;
+    position: fixed;
+    top:0;
+    left:0;
+    margin: 0;
+    width: 100%;
+
+
+}
+
+#nav li {
+    float: left;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+#nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
