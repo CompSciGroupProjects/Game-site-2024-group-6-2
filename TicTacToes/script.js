@@ -15,6 +15,7 @@ let turn = 1
 let player = "X"
 let computer = "O"
 let computerEnabled = null
+let computerHard = null
 let neverLose= null
 function attach(r, c) {
     if (stolen[r][c] === 0) {
@@ -41,18 +42,34 @@ function attach(r, c) {
 
 function neverLoseC() {
     if(neverLose===true){
-        while (true){
-
+        while(true) {
+            if(turn===0){
+                if (stolen2[0][0] === 2 || stolen2[0][2] === 2 || stolen2[2][0] === 2 || stolen2[2][2] === 2) {
+                    turn=1
+                    document.getElementById("11").innerHTML = computer;
+                    stolen[1][1] = 1
+                    stolen2[1][1] = 3
+                    document.getElementById("turn").innerHTML = "PLAYER1'S TURN";
+                    break;
+                }
+                else if(stolen2[1][1]===2){
+                    turn=1
+                    document.getElementById("11").innerHTML = computer;
+                    stolen[2][2] = 1
+                    stolen2[2][2] = 3
+                    document.getElementById("turn").innerHTML = "PLAYER1'S TURN";
+                    break;
+                }
+            }
         }
     }
-
 }
 function computerNL(){
 neverLose = true
 }
 function computer1() {
     if(turn===0&& computerEnabled === true){
-        //Current error: computer only picks a spot if player 2 clicks again
+
         while(true) {
             let r1=Math.floor(Math.random()*3)
             let c1=Math.floor(Math.random()*3)
