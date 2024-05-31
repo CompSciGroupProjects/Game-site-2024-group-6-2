@@ -1,6 +1,11 @@
 .gridMaker
 {
     border-style: groove;
+    border-width: 5px;
+border-color: black;
+    color:#FFBF64;
+    width: 100px;
+    height: 100px;
 }
 #all
 {
@@ -10,3 +15,20 @@
 {
 text-align: center;
 }
+body{
+    background: #FFBF64;
+}
+#Turn
+{
+ font-size: 100px;
+    font-family: Boogaloo;
+
+}
+@font-face {
+    font-family : 'Boogaloo';
+    src : url("fonts/Boogaloo-Regular.ttf");
+    font-weight : normal;
+    font-style : normal;
+}
+
+

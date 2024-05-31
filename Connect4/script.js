@@ -24,11 +24,15 @@ function spottaken(colNum) {
                 myArray[row][colNum] = player;
                 document.getElementById("SpaceRow" + row + "Col" + colNum).innerHTML = player;
                 if(document.getElementById("SpaceRow" + row + "Col" + colNum).innerHTML == 1) {
-                    document.getElementById("SpaceRow" + row + "Col" + colNum).style.color = "blue";
+                    document.getElementById("SpaceRow" + row + "Col" + colNum).style.backgroundColor = "#FF5768";
+                    document.getElementById("SpaceRow" + row + "Col" + colNum).style.color = "#FF5768";
+
                 }
                 else if(document.getElementById("SpaceRow" + row + "Col" + colNum).innerHTML==2)
                 {
-                    document.getElementById("SpaceRow" + row + "Col" + colNum).style.color = "red";
+                    document.getElementById("SpaceRow" + row + "Col" + colNum).style.backgroundColor = "#00A5E3";
+                    document.getElementById("SpaceRow" + row + "Col" + colNum).style.color = "#00A5E3";
+
                 }
                 else
                 {
@@ -51,7 +55,7 @@ function didWin() {
                 if (myArray[i][b] === myArray[i][b + 1] && myArray[i][b + 1] === myArray[i][b + 2] && myArray[i][b + 1] === myArray[i][b + 3]) {
                     if (myArray[i][b] !== 0) {
                         winner = true;
-                        alert("win horizontal" + myArray[i][b]);
+                        // alert("win horizontal" + myArray[i][b]);
                         document.getElementById("Turn").innerHTML = "Player " + myArray[i][b] + "'s won";
 
                         return;
@@ -65,7 +69,7 @@ function didWin() {
             for (var b = 0; b <= 3; b++) {
                 if (myArray[i][b] === myArray[i + 1][b + 1] && myArray[i + 1][b + 1] === myArray[i + 2][b + 2] && myArray[i + 1][b + 1] === myArray[i + 3][b + 3]) {
                     if (myArray[i][b] !== 0) {
-                        alert("win diagonal" + myArray[i][b]);
+                        // alert("win diagonal" + myArray[i][b]);
                         document.getElementById("Turn").innerHTML = "Player " + myArray[i][b] + "'s won";
                         winner = true;
                         return;
@@ -78,7 +82,7 @@ function didWin() {
             for (var b = 0; b <= 6; b++) {
                 if (myArray[i][b] === myArray[i + 1][b] && myArray[i + 1][b] === myArray[i + 2][b] && myArray[i + 1][b] === myArray[i + 3][b]) {
                     if (myArray[i][b] !== 0) {
-                        alert("win vertical" + myArray[i][b]);
+                        // alert("win vertical" + myArray[i][b]);
                         document.getElementById("Turn").innerHTML = "Player " + myArray[i][b] + "'s won";
                         winner = true;
                         return;
@@ -92,7 +96,7 @@ function didWin() {
             for (var b = 6; b >= 3; b--) {
                 if (myArray[i][b] === myArray[i + 1][b - 1] && myArray[i + 1][b - 1] === myArray[i + 2][b - 2] && myArray[i + 1][b - 1] === myArray[i + 3][b - 3]) {
                     if (myArray[i][b] !== 0) {
-                        alert("win diagonal" + myArray[i][b]);
+                        // alert("win diagonal" + myArray[i][b]);
                         document.getElementById("Turn").innerHTML = "Player " + myArray[i][b] + "'s won";
                         winner = true;
                         return;
@@ -103,7 +107,7 @@ function didWin() {
         if(maxPlays<= 0)
         {
             document.getElementById("Turn").innerHTML = "Tie";
-            alert("tie");
+            // alert("tie");
         }
         else {
             document.getElementById("Turn").innerHTML = "Player " + player + "'s turn";
