@@ -1,0 +1,74 @@
+.gridMaker
+{
+    border-style: groove;
+    border-width: 5px;
+border-color: black;
+    color:#FFBF64;
+    width: 100px;
+    height: 100px;
+}
+#all
+{
+    justify-content: center;
+}
+#Turn
+{
+text-align: center;
+}
+body{
+    background: #FFBF64;
+    padding-top: 100px;
+}
+#Turn
+{
+ font-size: 100px;
+    font-family: Boogaloo;
+
+}
+@font-face {
+    font-family : 'Boogaloo';
+    src : url("../fonts/Boogaloo-Regular.ttf");
+    font-weight : normal;
+    font-style : normal;
+}
+
+
+#nav {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #6dd3ff;
+    font-size: 140%;
+    position: fixed;
+    top:0;
+    left:0;
+    margin: 0;
+    width: 100%;
+    font-family: Boogaloo, serif;
+
+
+}
+
+#nav li {
+    float: left;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+#nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.active{
+    background: #00A5E3;
+}
+
+
+
+
+
+
