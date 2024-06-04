@@ -21,7 +21,7 @@ h1{
 }
 
 .btn{
-    color: #00A5E3;
+    color: black;
 }
 
 .col {
@@ -29,15 +29,15 @@ h1{
 }
 
 #winner{
-    color: #8DD7BF;
+    color: black;
 }
 
 #computerChoice{
-    color: #8DD7BF;
+    color: black;
 }
 
 #userChoice{
-    color: #8DD7BF;
+    color: black;
 }
 
 #nav {
