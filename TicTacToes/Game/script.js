@@ -43,17 +43,16 @@ function attach(r, c) {
 function neverLoseC() {
     if(neverLose===true){
         while(true) {
-            if(turn===0){
+            if (turn === 0) {
                 if (stolen2[0][0] === 2 || stolen2[0][2] === 2 || stolen2[2][0] === 2 || stolen2[2][2] === 2) {
-                    turn=1
+                    turn = 1
                     document.getElementById("11").innerHTML = computer;
                     stolen[1][1] = 1
                     stolen2[1][1] = 3
                     document.getElementById("turn").innerHTML = "PLAYER1'S TURN";
                     break;
-                }
-                else if(stolen2[1][1]===2){
-                    turn=1
+                } else if (stolen2[1][1] === 2) {
+                    turn = 1
                     document.getElementById("11").innerHTML = computer;
                     stolen[2][2] = 1
                     stolen2[2][2] = 3
@@ -117,9 +116,6 @@ function neverLoseC() {
 
                 }
             }
-
-
-        }
         }
     }
 }
