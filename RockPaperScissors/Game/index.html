@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matteo's Website Practice</title>
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<ul id="nav">
+    <li><a href="../../">Home</a></li>
+    <li><a href="../../TicTacToes">TicTacToe</a></li>
+    <li><a href="../../RockPaperScissors" class="active">Rock Paper Scissors</a></li>
+    <li><a href="../../Connect4">Connect4</a></li>
+    <li><a href="../../Hangman" >HangMan</a></li>
+</ul>
+<div class="container text-center">
+    <h1>Rock Paper Scissors</h1>
+    <div class="row">
+        <div class="col">
+            <button class="btn btn-primary" onclick="play('rock')">Rock</button>
+        </div>
+        <div class="col">
+            <button class="btn btn-primary" onclick="play('paper')">Paper</button>
+        </div>
+        <div class="col">
+            <button class="btn btn-primary" onclick="play('scissors')">Scissors</button>
+        </div>
+    </div>
+    <div class="row result">
+        <div class="col">
+            <h2>Your Choice:</h2>
+            <p id="userChoice"></p>
+        </div>
+        <div class="col">
+            <h2>Computer's Choice:</h2>
+            <p id="computerChoice"></p>
+        </div>
+        <div class="col">
+            <h2>Winner:</h2>
+            <p id="winner"></p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
