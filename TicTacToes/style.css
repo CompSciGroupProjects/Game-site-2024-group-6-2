@@ -1,57 +1,30 @@
-
-@font-face{
-    font-family: 'Boogaloo';
-    src:url("fonts/Boogaloo-Regular.ttf");
-    font-weight: normal;
-    font-style: normal;
-}
-
 body{
-    font-family: 'Boogaloo', serif;
-    background:#FFBF64;
+    font-family: Boogaloo, serif;
+    background: #FFBF64;
 }
 
-#board {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(3, 150px);
+#game-title {
+    text-align : center;
+    font-family : Boogaloo, serif;
+    font-size : 50px;
 }
 
-.ticTac{
-    background-color: #8DD7BF;
-    font-size: 100px;
-    font-family:'Boogaloo',sans-serif;
-}
-.activator{
-    margin-top:100px ;
-    justify-content: center;
-    background: #00A5E3;
-    font-size: 30px;
-    font-family:'Boogaloo',sans-serif
-}
-#joshua{
-    justify-content: center;
-    display:flex;
+#rules {
+    text-align : center;
+    font-family : Boogaloo, serif;
 }
 
-#displayWinner{
-    font-size: 100px;
-    color:#FF5768;
+#play {
+    font-family : Boogaloo, serif;
+    background-color: #00A5E3;
+    font-size : 2.5vw;
+    border : solid black 0.3vw;
+    cursor : pointer;
 }
-#nabil{
-    justify-content: center;
-    display:flex;
-}
-#nas{
-    justify-content: center;
-    display:flex;
-}
-#turn{
-    font-size: 50px
-}
+
 #nav {
     list-style-type: none;
-    padding:0;
+    padding: 0;
     overflow: hidden;
     background-color: #6dd3ff;
     font-size: 140%;
@@ -66,7 +39,7 @@ body{
 
 #nav li {
     float: left;
-    border-width: 1px;
+   border-width: 1px;
     border-color: black;
     border-style: solid;
 }
@@ -77,6 +50,15 @@ body{
     padding: 14px 16px;
     text-decoration: none;
 }
-#nav li:hover{
+
+.active{
     background: #00A5E3;
+}
+
+
+@font-face {
+    font-family : 'Boogaloo';
+    src : url("fonts/Boogaloo-Regular.ttf");
+    font-weight : normal;
+    font-style : normal;
 }

@@ -16,9 +16,7 @@ body{
     font-style : normal;
 }
 
-h1{
-    color:  #FF96C5 ;
-}
+
 
 .btn{
     color: #00A5E3;
@@ -39,6 +37,27 @@ h1{
 #userChoice{
     color: #8DD7BF;
 }
+
+#game-title {
+    text-align : center;
+    font-family : Boogaloo, serif;
+    font-size : 50px;
+}
+
+#rules {
+    text-align : center;
+    font-family : Boogaloo, serif;
+    color: black;
+}
+
+#play {
+    font-family : Boogaloo, serif;
+    background-color: #00A5E3;
+    font-size : 2.5vw;
+    border : solid black 0.3vw;
+    cursor : pointer;
+}
+
 
 #nav {
     list-style-type: none;
