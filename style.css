@@ -52,9 +52,17 @@ body{
 
 .imagesss
 {
-/*height: 25%;*/
     width: 55%;
+    border : 5px black solid;
+    border-radius : 5px;
+    margin-bottom : 5px;
+    transition : scale 150ms;
 }
+
+.imagesss:hover {
+    scale : 105%;
+}
+
 .imageDescr
 {
     align-content: space-evenly;
