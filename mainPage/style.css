@@ -1,7 +1,14 @@
 body{
-    font-family: Boogaloo;
+    font-family: Boogaloo, serif;
     background: #FFBF64;
 }
+
+#welcome {
+    text-align : center;
+    font-family : Boogaloo, serif;
+    font-size : 50px;
+}
+
 #nav {
     list-style-type: none;
     padding: 0;
