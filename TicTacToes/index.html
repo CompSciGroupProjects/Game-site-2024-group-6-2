@@ -1,43 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"> </script>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="../Hangman/style.css">
 </head>
 <body>
+<script src="script.js"></script>
 <ul id="nav">
-    <li><a href="" class="active">Home</a></li>
-    <li><a href="../TicTacToes">TicTacToe</a></li>
+    <li><a href="../" >Home</a></li>
+    <li><a href="../TicTacToes" class="active">TicTacToe</a></li>
     <li><a href="../RockPaperScissors">Rock Paper Scissors</a></li>
-    <li><a href="../Connect4">Connect4</a></li>
-    <li><a href="../Hangman">HangMan</a></li>
+    <li><a href="">Connect4</a></li>
+    <li><a href="../Hangman" >HangMan</a></li>
 </ul>
-
-<div id="nabil">
-    <button id="1player" class="activator" onclick="computerEnabler()">1 PLAYER (Easy Mode)</button>
-    <button id="neverLose" class="activator" onclick="computerNL()">1 PLAYER(ALWAYS LOSE)</button>
-    <button id="2player" class="activator" onclick="computerDisabler()">2 PLAYERS</button>
+<div id="game-title">
+    <h1>
+        Tic Tac Toe
+    </h1>
 </div>
-<div id="nas">
-    <p id="turn" >PLAYER1'S TURN</p>
-</div>
-
-<div id="board">
-    <button id="00" class="ticTac" onclick="attach(0,0)" >_</button>
-    <button id="01" class="ticTac" onclick="attach(0,1)">_</button>
-    <button id="02" class="ticTac" onclick="attach(0,2)">_</button>
-    <button id="10" class="ticTac" onclick="attach(1,0)">_</button>
-    <button id="11" class="ticTac" onclick="attach(1,1)">_</button>
-    <button id="12" class="ticTac" onclick="attach(1,2)">_</button>
-    <button id="20" class="ticTac" onclick="attach(2,0)">_</button>
-    <button id="21" class="ticTac" onclick="attach(2,1)">_</button>
-    <button id="22" class="ticTac" onclick="attach(2,2)">_</button>
-</div>
-
-<div id="joshua">
-    <p id="displayWinner" ></p>
+<div id="rules">
+    <h1>
+        RULES:
+    </h1>
+    <br>
+    <h2>
+        Players alternate turns<br>To win, a player must have 4 in a row vertically horizontally or diagonally
+    </h2>
+    <div>
+        <button id="play" onclick="redirectToGame()">
+            LETS PLAY!
+        </button>
+    </div>
 </div>
 </body>
 </html>
