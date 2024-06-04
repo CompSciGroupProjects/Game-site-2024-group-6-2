@@ -39,19 +39,44 @@ function attach(r, c) {
     computer1()
     winOrLoss()
 }
-
 function neverLoseC() {
-    if(neverLose===true){
-        while(true) {
+    if (neverLose === true) {
+        while (true) {
             if (turn === 0) {
-                if (stolen2[0][0] === 2 || stolen2[0][2] === 2 || stolen2[2][0] === 2 || stolen2[2][2] === 2) {
-                    turn = 1
-                    document.getElementById("11").innerHTML = computer;
-                    stolen[1][1] = 1
-                    stolen2[1][1] = 3
-                    document.getElementById("turn").innerHTML = "PLAYER1'S TURN";
-                    break;
-                } else if (stolen2[1][1] === 2) {
+                //if player goes in corner, computer goes in middle
+                if (stolen2[0][0] === 2) {
+                    if (stolen2[2][2] === 2) {
+                        if(){
+
+                        }
+                        else{
+                            turn = 1
+                            document.getElementById("11").innerHTML = computer;
+                            stolen[0][1] = 1
+                            stolen2[1][1] = 3
+                            document.getElementById("turn").innerHTML = "PLAYER1'S TURN";
+                        }
+                    }
+                    else{
+                        turn = 1
+                        document.getElementById("11").innerHTML = computer;
+                        stolen[1][1] = 1
+                        stolen2[1][1] = 3
+                        document.getElementById("turn").innerHTML = "PLAYER1'S TURN";
+                        break
+                    }
+                }
+                else if(stolen2[0][2] === 2) {
+
+                }
+                else if(stolen2[2][0] === 2){
+
+                }
+                else if(stolen2[2][2] === 2){
+
+                }
+                //if player goes in middle, go in corner
+                else if (stolen2[1][1] === 2) {
                     turn = 1
                     document.getElementById("11").innerHTML = computer;
                     stolen[2][2] = 1
@@ -59,66 +84,13 @@ function neverLoseC() {
                     document.getElementById("turn").innerHTML = "PLAYER1'S TURN";
                     break;
                 }
-                for (let i = 0; i < 3; i++) {
-                    // Horizontal
-                    if (stolen2[i][0] === 2 && stolen2[i][1] === 2 && stolen2[i][2] === 0) {
 
-                    } else if (stolen2[i][0] === 2 && stolen2[i][1] === 0 && stolen2[i][2] === 2) {
 
-                    } else if (stolen2[i][0] === 0 && stolen2[i][1] === 2 && stolen2[i][2] === 2) {
-
-                    }
-                    // Vertical
-                    else if (stolen2[0][i] === 2 && stolen2[1][i] === 2 && stolen2[2][i] === 0) {
-
-                    } else if (stolen2[0][i] === 2 && stolen2[1][i] === 0 && stolen2[2][i] === 2) {
-
-                    } else if (stolen2[0][i] === 0 && stolen2[1][i] === 2 && stolen2[2][i] === 2) {
-
-                    }
-                }
-                // Diagonals
-                if (stolen2[0][0] === 2 && stolen2[1][1] === 2 && stolen2[2][2] === 0) {
-
-                } else if (stolen2[0][0] === 2 && stolen2[1][1] === 0 && stolen2[2][2] === 2) {
-
-                } else if (stolen2[0][0] === 0 && stolen2[1][1] === 2 && stolen2[2][2] === 2) {
-
-                } else if (stolen2[0][2] === 2 && stolen2[1][1] === 2 && stolen2[2][0] === 0) {
-
-                } else if (stolen2[0][2] === 2 && stolen2[1][1] === 0 && stolen2[2][0] === 2) {
-
-                } else if (stolen2[0][2] === 0 && stolen2[1][1] === 2 && stolen2[2][0] === 2) {
-
-                }
-                // Make center move if available
-                else if (stolen2[1][1] === 0) {
-
-                }
-                // Take corners if available
-                else if (stolen2[0][0] === 0) {
-
-                } else if (stolen2[0][2] === 0) {
-
-                } else if (stolen2[2][0] === 0) {
-
-                } else if (stolen2[2][2] === 0) {
-                    t
-                }
-                // Take remaining sides if available
-                else if (stolen2[0][1] === 0) {
-
-                } else if (stolen2[1][0] === 0) {
-
-                } else if (stolen2[1][2] === 0) {
-
-                } else if (stolen2[2][1] === 0) {
-
-                }
             }
         }
     }
 }
+
 function computerNL(){
 neverLose = true
 }
