@@ -40,55 +40,7 @@ function attach(r, c) {
     winOrLoss()
 }
 function neverLoseC() {
-    if (neverLose === true) {
-        while (true) {
-            if (turn === 0) {
-                //if player goes in corner, computer goes in middle
-                if (stolen2[0][0] === 2) {
-                    if (stolen2[2][2] === 2) {
-                        if(){
 
-                        }
-                        else{
-                            turn = 1
-                            document.getElementById("11").innerHTML = computer;
-                            stolen[0][1] = 1
-                            stolen2[1][1] = 3
-                            document.getElementById("turn").innerHTML = "PLAYER1'S TURN";
-                        }
-                    }
-                    else{
-                        turn = 1
-                        document.getElementById("11").innerHTML = computer;
-                        stolen[1][1] = 1
-                        stolen2[1][1] = 3
-                        document.getElementById("turn").innerHTML = "PLAYER1'S TURN";
-                        break
-                    }
-                }
-                else if(stolen2[0][2] === 2) {
-
-                }
-                else if(stolen2[2][0] === 2){
-
-                }
-                else if(stolen2[2][2] === 2){
-
-                }
-                //if player goes in middle, go in corner
-                else if (stolen2[1][1] === 2) {
-                    turn = 1
-                    document.getElementById("11").innerHTML = computer;
-                    stolen[2][2] = 1
-                    stolen2[2][2] = 3
-                    document.getElementById("turn").innerHTML = "PLAYER1'S TURN";
-                    break;
-                }
-
-
-            }
-        }
-    }
 }
 
 function computerNL(){
